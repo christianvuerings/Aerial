@@ -86,6 +86,8 @@ class LayerManager {
                 newLayer = TimerLayer(withLayer: layer, isPreview: isPreview, offsets: offsets, manager: self, config: PrefsInfo.timer)
             case .music:
                 newLayer = MusicLayer(withLayer: layer, isPreview: isPreview, offsets: offsets, manager: self, config: PrefsInfo.music)
+            case .quote:
+                newLayer = QuoteLayer(withLayer: layer, isPreview: isPreview, offsets: offsets, manager: self, config: PrefsInfo.quote)
             }
         }
 

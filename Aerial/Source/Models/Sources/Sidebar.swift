@@ -48,7 +48,6 @@ class Sidebar {
             Header(name: "Information", entries: [
                 MenuEntry(name: "About", path: "infos:about"),
                 MenuEntry(name: "Credits", path: "infos:credits"),
-                MenuEntry(name: "Help", path: "infos:help")
             ])
         ]
     }

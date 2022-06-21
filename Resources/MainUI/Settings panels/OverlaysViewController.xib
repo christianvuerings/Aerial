@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20034" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20034"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,6 +22,7 @@
                 <outlet property="infoMessageTextView" destination="eaZ-HA-6Kx" id="f5W-Be-GRk"/>
                 <outlet property="infoMessageView" destination="wFi-1P-F0m" id="TSS-kq-QgP"/>
                 <outlet property="infoMusicView" destination="ixa-6o-Glt" id="Gqv-EY-bU1"/>
+                <outlet property="infoQuoteView" destination="hOg-0m-nwb" id="3PC-xQ-Vr5"/>
                 <outlet property="infoScrollView" destination="sMA-U2-JnG" id="GCA-NS-LgC"/>
                 <outlet property="infoScrollableView" destination="y2b-67-Tqj" id="5M2-UL-aZx"/>
                 <outlet property="infoSettingsTableView" destination="d1q-xb-ZLa" id="11p-YY-Bgo"/>
@@ -31,7 +32,7 @@
                 <outlet property="infoWeatherView" destination="cmR-hZ-0Fe" id="zIn-Z8-lfo"/>
                 <outlet property="popoverWeather" destination="mNc-DU-HEx" id="JaA-P6-Tgl"/>
                 <outlet property="trashButton" destination="JnO-I8-Uqt" id="K63-kl-sep"/>
-                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="Otd-TZ-LsO"/>
                 <outlet property="weatherCustomView" destination="gfx-ZG-teS" id="9O8-uI-GgY"/>
                 <outlet property="weatherLabel" destination="3Z6-oE-76I" id="irt-l5-8IG"/>
                 <outlet property="weatherPanel" destination="T1o-cz-8zC" id="Yp7-Gx-LSc"/>
@@ -222,7 +223,7 @@
                     </textFieldCell>
                 </textField>
                 <imageView horizontalHuggingPriority="25" verticalHuggingPriority="25" horizontalCompressionResistancePriority="75" verticalCompressionResistancePriority="75" translatesAutoresizingMaskIntoConstraints="NO" id="sjm-7w-iIw">
-                    <rect key="frame" x="16" y="827" width="28" height="45"/>
+                    <rect key="frame" x="16" y="828" width="28" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="2fL-xS-TE1"/>
                         <constraint firstAttribute="width" constant="28" id="LVM-ht-Vpd"/>
@@ -272,11 +273,11 @@
             <point key="canvasLocation" x="-49.5" y="664.5"/>
         </customView>
         <customView id="GtU-uK-2NN" userLabel="Settings Extra View" customClass="InfoSettingsView" customModule="Aerial" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="595" height="394"/>
+            <rect key="frame" x="0.0" y="0.0" width="595" height="396"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <popUpButton identifier="Duration of the fades for the text" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="G3P-fi-r9H">
-                    <rect key="frame" x="145" y="349" width="120" height="40"/>
+                    <rect key="frame" x="145" y="351" width="120" height="40"/>
                     <popUpButtonCell key="cell" type="push" title="1 second" bezelStyle="rounded" alignment="left" controlSize="large" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="x2L-HF-3HG" id="qgj-oO-wcE">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" size="14" name="HelveticaNeue"/>
@@ -296,7 +297,7 @@
                     </connections>
                 </popUpButton>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ySi-eW-CSJ">
-                    <rect key="frame" x="64" y="362" width="80" height="17"/>
+                    <rect key="frame" x="64" y="364" width="80" height="17"/>
                     <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" alignment="right" title="Fade in/out:" id="ja1-t4-O35">
                         <font key="font" metaFont="system" size="14"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -304,7 +305,7 @@
                     </textFieldCell>
                 </textField>
                 <button toolTip="Change the distance between the corner of the screen and where the descriptions should appear" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="su9-vv-ZAb">
-                    <rect key="frame" x="147" y="269.5" width="197" height="22"/>
+                    <rect key="frame" x="147" y="270" width="197" height="22"/>
                     <buttonCell key="cell" type="check" title="Change margins to corner" bezelStyle="regularSquare" imagePosition="left" controlSize="large" inset="2" id="Z9i-9m-7Pr">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -433,7 +434,7 @@
                     <rect key="frame" x="20" y="209" width="555" height="5"/>
                 </box>
                 <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="MNn-wF-5ps">
-                    <rect key="frame" x="20" y="303" width="555" height="5"/>
+                    <rect key="frame" x="20" y="304" width="555" height="5"/>
                 </box>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AuC-BT-A1Y">
                     <rect key="frame" x="216" y="230" width="25" height="17"/>
@@ -483,7 +484,7 @@
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="K6D-Z1-PuI">
-                    <rect key="frame" x="147" y="319.5" width="358" height="22"/>
+                    <rect key="frame" x="147" y="321" width="358" height="22"/>
                     <buttonCell key="cell" type="check" title="High quality text rendering (may cause slowdowns)" bezelStyle="regularSquare" imagePosition="left" controlSize="large" inset="2" id="cAs-le-MAS">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -600,7 +601,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gE6-mL-xQJ">
-                    <rect key="frame" x="150" y="133" width="66" height="22"/>
+                    <rect key="frame" x="150" y="135" width="91" height="22"/>
                     <datePickerCell key="cell" controlSize="large" borderStyle="bezel" alignment="left" id="VJx-1x-ZEb">
                         <font key="font" metaFont="system" size="14"/>
                         <date key="date" timeIntervalSinceReferenceDate="616845403.54662097">
@@ -615,7 +616,7 @@
                     </connections>
                 </datePicker>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NzK-P4-GqX">
-                    <rect key="frame" x="80" y="137" width="64" height="17"/>
+                    <rect key="frame" x="80" y="139" width="64" height="17"/>
                     <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" alignment="right" title="Duration:" id="ro4-RK-m9b">
                         <font key="font" metaFont="system" size="14"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -623,7 +624,7 @@
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gVp-r5-gaa">
-                    <rect key="frame" x="226" y="134.5" width="115" height="22"/>
+                    <rect key="frame" x="251" y="136" width="115" height="22"/>
                     <buttonCell key="cell" type="check" title="with seconds" bezelStyle="regularSquare" imagePosition="left" controlSize="large" state="on" inset="2" id="nXA-rl-ef4">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -633,7 +634,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EeX-wh-JU0">
-                    <rect key="frame" x="147" y="91.5" width="232" height="22"/>
+                    <rect key="frame" x="147" y="93" width="232" height="22"/>
                     <buttonCell key="cell" type="check" title="Disable for subsequent launchs" bezelStyle="regularSquare" imagePosition="left" controlSize="large" state="on" inset="2" id="xi5-dB-ZLe">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -643,7 +644,7 @@
                     </connections>
                 </button>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="E21-aN-ze3">
-                    <rect key="frame" x="44" y="94" width="100" height="17"/>
+                    <rect key="frame" x="44" y="96" width="100" height="17"/>
                     <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" alignment="right" title="When elapsed:" id="U7L-lM-hqL">
                         <font key="font" metaFont="system" size="14"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -651,7 +652,7 @@
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1Y7-SU-huu">
-                    <rect key="frame" x="147" y="52.5" width="215" height="22"/>
+                    <rect key="frame" x="147" y="53" width="215" height="22"/>
                     <buttonCell key="cell" type="check" title="Replace timer with message:" bezelStyle="regularSquare" imagePosition="left" controlSize="large" state="on" inset="2" id="Vyj-GE-Y9f">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -733,7 +734,7 @@
                     </connections>
                 </popUpButton>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jQV-Kz-kEQ">
-                    <rect key="frame" x="415" y="67.5" width="91" height="22"/>
+                    <rect key="frame" x="415" y="67" width="91" height="22"/>
                     <buttonCell key="cell" type="check" title="With year" bezelStyle="regularSquare" imagePosition="left" controlSize="large" state="on" inset="2" id="Ta8-2G-fXS">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -912,7 +913,7 @@
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ebH-Dw-L7o">
-                    <rect key="frame" x="333" y="203.5" width="63" height="22"/>
+                    <rect key="frame" x="333" y="203" width="63" height="22"/>
                     <buttonCell key="cell" type="check" title="Wind" bezelStyle="regularSquare" imagePosition="left" controlSize="large" state="on" inset="2" id="UkF-Co-r2Q">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -922,7 +923,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AwV-pQ-aIV">
-                    <rect key="frame" x="401" y="203.5" width="87" height="22"/>
+                    <rect key="frame" x="401" y="203" width="87" height="22"/>
                     <buttonCell key="cell" type="check" title="Humidity" bezelStyle="regularSquare" imagePosition="left" controlSize="large" state="on" inset="2" id="ZMg-9E-Euc">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -946,7 +947,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RHF-CV-kHu">
-                    <rect key="frame" x="493" y="203.5" width="94" height="22"/>
+                    <rect key="frame" x="493" y="203" width="94" height="22"/>
                     <buttonCell key="cell" type="check" title="City name" bezelStyle="regularSquare" imagePosition="left" controlSize="large" state="on" inset="2" id="Jpp-uy-v8A">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -1018,13 +1019,13 @@
                 <outlet property="withHumidity" destination="AwV-pQ-aIV" id="oVr-Gy-RqA"/>
                 <outlet property="withWind" destination="ebH-Dw-L7o" id="YZW-Ts-hNB"/>
             </connections>
-            <point key="canvasLocation" x="-126" y="1401"/>
+            <point key="canvasLocation" x="-120" y="1391"/>
         </customView>
         <window title="Weather preview" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="T1o-cz-8zC" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES" utility="YES" HUD="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="272" y="172" width="673" height="487"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1175"/>
             <view key="contentView" id="Raj-x7-cvl">
                 <rect key="frame" x="0.0" y="0.0" width="673" height="487"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -1076,7 +1077,7 @@ Independant of your choice, you can preview the results using the "Test" button 
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="q9j-r0-6Oe">
-                    <rect key="frame" x="147" y="100.5" width="117" height="22"/>
+                    <rect key="frame" x="147" y="100" width="117" height="22"/>
                     <buttonCell key="cell" type="check" title="With seconds" bezelStyle="regularSquare" imagePosition="left" controlSize="large" state="on" inset="2" id="lJR-jf-K6g">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -1086,7 +1087,7 @@ Independant of your choice, you can preview the results using the "Test" button 
                     </connections>
                 </button>
                 <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sMh-8c-gCl">
-                    <rect key="frame" x="145" y="47" width="111" height="40"/>
+                    <rect key="frame" x="145" y="46" width="111" height="40"/>
                     <popUpButtonCell key="cell" type="push" title="Default" bezelStyle="rounded" alignment="left" controlSize="large" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="uaE-4p-KWC" id="gOW-Cb-Vbq">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" size="14" name="HelveticaNeue"/>
@@ -1106,7 +1107,7 @@ Independant of your choice, you can preview the results using the "Test" button 
                     </connections>
                 </popUpButton>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wrp-j1-frU">
-                    <rect key="frame" x="90" y="60" width="54" height="17"/>
+                    <rect key="frame" x="90" y="59" width="54" height="17"/>
                     <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" alignment="right" title="Format:" id="HfW-zW-MAZ">
                         <font key="font" metaFont="system" size="14"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1114,7 +1115,7 @@ Independant of your choice, you can preview the results using the "Test" button 
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2fJ-Nq-rVX">
-                    <rect key="frame" x="150" y="9" width="250" height="22"/>
+                    <rect key="frame" x="150" y="8" width="250" height="22"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="250" id="fnW-Hi-o1g"/>
                     </constraints>
@@ -1128,7 +1129,7 @@ Independant of your choice, you can preview the results using the "Test" button 
                     </connections>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hRK-bh-FN7">
-                    <rect key="frame" x="256" y="57.5" width="109" height="22"/>
+                    <rect key="frame" x="256" y="56" width="109" height="22"/>
                     <buttonCell key="cell" type="check" title="Hide AM/PM" bezelStyle="regularSquare" imagePosition="left" controlSize="large" state="on" inset="2" id="FLS-1J-0NL">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -1163,7 +1164,7 @@ Independant of your choice, you can preview the results using the "Test" button 
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VqT-6u-vi8">
-                    <rect key="frame" x="150" y="52" width="163" height="22"/>
+                    <rect key="frame" x="150" y="52" width="176" height="22"/>
                     <datePickerCell key="cell" controlSize="large" borderStyle="bezel" alignment="left" id="SqO-Mg-AO0">
                         <font key="font" metaFont="system" size="14"/>
                         <date key="date" timeIntervalSinceReferenceDate="616845641.97237301">
@@ -1210,7 +1211,7 @@ Independant of your choice, you can preview the results using the "Test" button 
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cm5-HA-hKl">
-                    <rect key="frame" x="281" y="96.5" width="115" height="22"/>
+                    <rect key="frame" x="281" y="96" width="115" height="22"/>
                     <buttonCell key="cell" type="check" title="with seconds" bezelStyle="regularSquare" imagePosition="left" controlSize="large" state="on" inset="2" id="oVs-Ii-qMe">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -1220,7 +1221,7 @@ Independant of your choice, you can preview the results using the "Test" button 
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2A5-7P-mvL">
-                    <rect key="frame" x="147" y="10.5" width="135" height="22"/>
+                    <rect key="frame" x="147" y="10" width="135" height="22"/>
                     <buttonCell key="cell" type="check" title="Only show after " bezelStyle="regularSquare" imagePosition="left" controlSize="large" state="on" inset="2" id="JRz-Os-UZb">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -1230,7 +1231,7 @@ Independant of your choice, you can preview the results using the "Test" button 
                     </connections>
                 </button>
                 <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VCk-nf-BTu">
-                    <rect key="frame" x="290" y="9" width="163" height="22"/>
+                    <rect key="frame" x="290" y="9" width="176" height="22"/>
                     <datePickerCell key="cell" controlSize="large" borderStyle="bezel" alignment="left" id="d1w-rW-mhy">
                         <font key="font" metaFont="system" size="14"/>
                         <date key="date" timeIntervalSinceReferenceDate="616845641.97390699">
@@ -1417,11 +1418,11 @@ Independant of your choice, you can preview the results using the "Test" button 
             <point key="canvasLocation" x="-161" y="-118.5"/>
         </customView>
         <customView id="T8p-iy-4mZ" userLabel="Common Info View" customClass="InfoCommonView" customModule="Aerial" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="595" height="273"/>
+            <rect key="frame" x="0.0" y="0.0" width="595" height="274"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
             <subviews>
                 <button toolTip="Enable or disable this overlay" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fYk-Ks-9Iw">
-                    <rect key="frame" x="147" y="231.5" width="73" height="22"/>
+                    <rect key="frame" x="147" y="232" width="73" height="22"/>
                     <buttonCell key="cell" type="check" title="Enable" bezelStyle="regularSquare" imagePosition="left" controlSize="large" state="on" inset="2" id="7jg-Fa-pIh">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -1844,11 +1845,11 @@ corner</string>
             <point key="canvasLocation" x="550" y="1155"/>
         </customView>
         <customView id="d6p-Wj-XTq" userLabel="Battery Extra View" customClass="InfoBatteryView" customModule="Aerial" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="595" height="39"/>
+            <rect key="frame" x="0.0" y="0.0" width="595" height="40"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WYI-OI-dE9">
-                    <rect key="frame" x="147" y="8.5" width="186" height="22"/>
+                    <rect key="frame" x="147" y="9" width="186" height="22"/>
                     <buttonCell key="cell" type="check" title="Hide when battery is full" bezelStyle="regularSquare" imagePosition="left" controlSize="large" state="on" inset="2" id="Hq7-7H-DW7">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -1868,14 +1869,52 @@ corner</string>
             </connections>
             <point key="canvasLocation" x="-816" y="397"/>
         </customView>
+        <customView id="hOg-0m-nwb" userLabel="Quote View" customClass="InfoQuoteView" customModule="Aerial" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="580" height="238"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLi-ay-EcN">
+                    <rect key="frame" x="109" y="206" width="35" height="17"/>
+                    <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" alignment="right" title="URL:" id="exl-oL-4Tf">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C0V-A0-Xsl">
+                    <rect key="frame" x="150" y="204" width="410" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="xBm-Dn-394"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="large" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="https://" drawsBackground="YES" id="Oqz-Jc-hbb">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="locationStringChange:" target="hOg-0m-nwb" id="ESG-jK-mvV"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="C0V-A0-Xsl" firstAttribute="leading" secondItem="RLi-ay-EcN" secondAttribute="trailing" constant="8" symbolic="YES" id="EPe-Jh-umP"/>
+                <constraint firstItem="C0V-A0-Xsl" firstAttribute="top" secondItem="hOg-0m-nwb" secondAttribute="top" constant="12" id="L6o-99-TWD"/>
+                <constraint firstAttribute="trailing" secondItem="C0V-A0-Xsl" secondAttribute="trailing" constant="16" id="Svj-my-ZAM"/>
+                <constraint firstItem="C0V-A0-Xsl" firstAttribute="baseline" secondItem="RLi-ay-EcN" secondAttribute="baseline" id="vdF-Zy-EkB"/>
+            </constraints>
+            <connections>
+                <outlet property="urlField" destination="C0V-A0-Xsl" id="Vrp-yB-0Nk"/>
+            </connections>
+            <point key="canvasLocation" x="-120" y="1687"/>
+        </customView>
     </objects>
     <resources>
         <image name="NSFontPanel" width="32" height="32"/>
-        <image name="NSListViewTemplate" width="16" height="12"/>
+        <image name="NSListViewTemplate" width="17" height="12"/>
         <image name="NSStatusAvailable" width="16" height="16"/>
         <image name="NSTouchBarDeleteTemplate" width="15" height="17"/>
         <image name="openweather_logo" width="180" height="80"/>
         <image name="screen0" width="720" height="400"/>
-        <image name="text.bubble" catalog="system" width="22" height="20"/>
+        <image name="text.bubble" catalog="system" width="22" height="19"/>
     </resources>
 </document>

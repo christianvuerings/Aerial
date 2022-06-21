@@ -46,6 +46,9 @@ class InfoCommonView: NSView {
         case .location:
             //controller.infoBox.title = "Video location information"
             posRandom.isHidden = false
+        case .quote:
+            //controller.infoBox.title = "Video location information"
+            posRandom.isHidden = false
         case .message:
             //controller.infoBox.title = "Custom message"
             posRandom.isHidden = true
@@ -178,6 +181,8 @@ class InfoCommonView: NSView {
         switch forType {
         case .location:
             PrefsInfo.location.fontSize = 28
+        case .quote:
+            PrefsInfo.countdown.fontSize = 100
         case .message:
             PrefsInfo.message.fontSize = 20
         case .clock:

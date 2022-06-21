@@ -24,6 +24,7 @@ class OverlaysViewController: NSViewController {
     @IBOutlet var infoCommonView: InfoCommonView!
 
     @IBOutlet var infoLocationView: InfoLocationView!
+    @IBOutlet var infoQuoteView: InfoQuoteView!
     @IBOutlet var infoClockView: InfoClockView!
     @IBOutlet var infoMessageView: InfoMessageView!
 
@@ -104,6 +105,11 @@ class OverlaysViewController: NSViewController {
             infoLocationView.setStates()
             
             //infoScrollableView.setFrameSize(NSSize(width: infoScrollableView.frame.width, height: infoCommonView.frame.height + infoLocationView.frame.height))
+        case .quote:
+            infoScrollableView.addSubview(infoQuoteView)
+            infoQuoteView.frame.origin.y = infoCommonView.frame.height
+            infoQuoteView.setStates()
+            
         case .message:
             infoScrollableView.addSubview(infoMessageView)
             infoMessageView.frame.origin.y = infoCommonView.frame.height

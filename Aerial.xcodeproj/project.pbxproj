@@ -768,9 +768,6 @@
 		03EED2F324C44A7900F0C3D4 /* OverlaysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03EED2EF24C44A7900F0C3D4 /* OverlaysViewController.xib */; };
 		03EED2F424C44A7900F0C3D4 /* OverlaysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03EED2EF24C44A7900F0C3D4 /* OverlaysViewController.xib */; };
 		03EED2F524C44A7900F0C3D4 /* OverlaysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03EED2EF24C44A7900F0C3D4 /* OverlaysViewController.xib */; };
-		03F3C1BA24F2A923007733B5 /* kofi1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F3C1B924F2A923007733B5 /* kofi1@2x.png */; };
-		03F3C1BB24F2A923007733B5 /* kofi1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F3C1B924F2A923007733B5 /* kofi1@2x.png */; };
-		03F3C1BC24F2A923007733B5 /* kofi1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F3C1B924F2A923007733B5 /* kofi1@2x.png */; };
 		03F5551B24E9C091003AAD0B /* SourceOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5551A24E9C091003AAD0B /* SourceOutlineView.swift */; };
 		03F5551C24E9C091003AAD0B /* SourceOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5551A24E9C091003AAD0B /* SourceOutlineView.swift */; };
 		03F5551D24E9C091003AAD0B /* SourceOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F5551A24E9C091003AAD0B /* SourceOutlineView.swift */; };
@@ -815,6 +812,12 @@
 		03FF193426972C1200A0FA7F /* AppleMusicSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF193326972C1200A0FA7F /* AppleMusicSearch.swift */; };
 		03FF193526972C1200A0FA7F /* AppleMusicSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF193326972C1200A0FA7F /* AppleMusicSearch.swift */; };
 		03FF193626972C1200A0FA7F /* AppleMusicSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF193326972C1200A0FA7F /* AppleMusicSearch.swift */; };
+		92E127942860861200A3296A /* QuoteLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E127932860861200A3296A /* QuoteLayer.swift */; };
+		92E127952860861200A3296A /* QuoteLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E127932860861200A3296A /* QuoteLayer.swift */; };
+		92E127962860861200A3296A /* QuoteLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E127932860861200A3296A /* QuoteLayer.swift */; };
+		92E127982860C32200A3296A /* InfoQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E127972860C32200A3296A /* InfoQuoteView.swift */; };
+		92E127992860C32200A3296A /* InfoQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E127972860C32200A3296A /* InfoQuoteView.swift */; };
+		92E1279A2860C32200A3296A /* InfoQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E127972860C32200A3296A /* InfoQuoteView.swift */; };
 		AA7E2E5E1FC62E8B00E5F320 /* AerialPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E2E5D1FC62E8B00E5F320 /* AerialPlayerItem.swift */; };
 		F00864B423AAE7F0003210EF /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00864B323AAE7F0003210EF /* DarkMode.swift */; };
 		F00864B523AAE7F0003210EF /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00864B323AAE7F0003210EF /* DarkMode.swift */; };
@@ -1150,7 +1153,6 @@
 		03EBF0BF2746A53B00EC09D1 /* PlayingCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayingCollectionViewItem.xib; sourceTree = "<group>"; };
 		03EED2EE24C44A7900F0C3D4 /* OverlaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlaysViewController.swift; sourceTree = "<group>"; };
 		03EED2EF24C44A7900F0C3D4 /* OverlaysViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlaysViewController.xib; sourceTree = "<group>"; };
-		03F3C1B924F2A923007733B5 /* kofi1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kofi1@2x.png"; sourceTree = "<group>"; };
 		03F5551A24E9C091003AAD0B /* SourceOutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceOutlineView.swift; sourceTree = "<group>"; };
 		03F752CF24EED19B00945B1D /* video_inspire_alabama_montgomery_countryside_00007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_inspire_alabama_montgomery_countryside_00007.png; sourceTree = "<group>"; };
 		03F752D024EED19C00945B1D /* video_inspire_california_big-sur_2020_00001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video_inspire_california_big-sur_2020_00001.png"; sourceTree = "<group>"; };
@@ -1164,6 +1166,8 @@
 		03FA49B62428F84500863AF6 /* DateLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLayer.swift; sourceTree = "<group>"; };
 		03FF192F269709AB00A0FA7F /* PlaybackSpeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackSpeed.swift; sourceTree = "<group>"; };
 		03FF193326972C1200A0FA7F /* AppleMusicSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicSearch.swift; sourceTree = "<group>"; };
+		92E127932860861200A3296A /* QuoteLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteLayer.swift; sourceTree = "<group>"; };
+		92E127972860C32200A3296A /* InfoQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoQuoteView.swift; sourceTree = "<group>"; };
 		AA7E2E5D1FC62E8B00E5F320 /* AerialPlayerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerialPlayerItem.swift; sourceTree = "<group>"; };
 		F00864B323AAE7F0003210EF /* DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
 		F00864B623AAE8E9003210EF /* NightShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightShift.swift; sourceTree = "<group>"; };
@@ -1262,6 +1266,7 @@
 				0306336D23A15FA900046A59 /* AnimationTextLayer.swift */,
 				030A0F28245C7C7D009E1D97 /* BatteryIconLayer.swift */,
 				0306336723A1012200046A59 /* LocationLayer.swift */,
+				92E127932860861200A3296A /* QuoteLayer.swift */,
 				03BF51BE23A274CA008AD373 /* MessageLayer.swift */,
 				03BF51C123A2978B008AD373 /* ClockLayer.swift */,
 				03FA49B62428F84500863AF6 /* DateLayer.swift */,
@@ -1521,6 +1526,7 @@
 				03FA49B32428EE3300863AF6 /* InfoDateView.swift */,
 				0385FC5C242B9F6E007E6513 /* InfoWeatherView.swift */,
 				03E168152673A23900D7442D /* InfoMusicView.swift */,
+				92E127972860C32200A3296A /* InfoQuoteView.swift */,
 			);
 			path = PrefPanel;
 			sourceTree = "<group>";
@@ -1690,7 +1696,6 @@
 		FAC36F361BE1756D007F2A20 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				03F3C1B924F2A923007733B5 /* kofi1@2x.png */,
 				03DB968325657AE600BFCF20 /* LogoIcon-128px@2x.png */,
 				03DB966D256569F800BFCF20 /* icon-512@2x.png */,
 				0319460824D1A09F00F37B35 /* icon-320@2x.png */,
@@ -1932,12 +1937,12 @@
 				ORGANIZATIONNAME = "Guillaume Louel";
 				TargetAttributes = {
 					0396D50724B8B7ED00CC021B = {
-						DevelopmentTeam = 3L54M5L5KK;
+						DevelopmentTeam = 7GRKLMAUTS;
 						ProvisioningStyle = Manual;
 					};
 					FA143CD51BDA3E880041A82B = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 3L54M5L5KK;
+						DevelopmentTeam = 7GRKLMAUTS;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
@@ -1949,7 +1954,7 @@
 					};
 					FACAF1A41BD9FC6000E539DC = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 3L54M5L5KK;
+						DevelopmentTeam = 7GRKLMAUTS;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
@@ -2051,7 +2056,6 @@
 				03AA7AB824C84C6400A47970 /* bolt.fill.pdf in Resources */,
 				03AA7A9D24C84C6300A47970 /* cloud.moon.rain.pdf in Resources */,
 				0378986224C35F8A009B9418 /* CacheViewController.xib in Resources */,
-				03F3C1BB24F2A923007733B5 /* kofi1@2x.png in Resources */,
 				03977EF2250E6918008FBAFD /* sv.json in Resources */,
 				03977F16250E6918008FBAFD /* zh_CN.json in Resources */,
 				030010AF24D71EB20092AE68 /* FiltersViewController.xib in Resources */,
@@ -2212,7 +2216,6 @@
 				0329877A274687340036D898 /* NowPlayingViewController.xib in Resources */,
 				03977F0B250E6918008FBAFD /* pt_BR.json in Resources */,
 				0300B80324D1B536006132E5 /* clock.pdf in Resources */,
-				03F3C1BC24F2A923007733B5 /* kofi1@2x.png in Resources */,
 				031332A124BF3FA700C84A05 /* SidebarViewController.xib in Resources */,
 				03AA7A7724C84C6300A47970 /* sun.dust.pdf in Resources */,
 				0350CB7E279481F2005F8625 /* hu.json in Resources */,
@@ -2362,7 +2365,6 @@
 				03AA7AB724C84C6400A47970 /* bolt.fill.pdf in Resources */,
 				03AA7A9C24C84C6300A47970 /* cloud.moon.rain.pdf in Resources */,
 				0378986124C35F8A009B9418 /* CacheViewController.xib in Resources */,
-				03F3C1BA24F2A923007733B5 /* kofi1@2x.png in Resources */,
 				03977EF1250E6918008FBAFD /* sv.json in Resources */,
 				03977F15250E6918008FBAFD /* zh_CN.json in Resources */,
 				030010AE24D71EB20092AE68 /* FiltersViewController.xib in Resources */,
@@ -2513,6 +2515,7 @@
 				031945FC24CCC52600F37B35 /* HelpViewController.swift in Sources */,
 				0396D51F24B8B7ED00CC021B /* AerialView+Brightness.swift in Sources */,
 				03D3A11424C5FC770091FE99 /* AspectFillNSImageView.swift in Sources */,
+				92E127952860861200A3296A /* QuoteLayer.swift in Sources */,
 				030473CC24BCA9A40094A1A6 /* VideoViewItem.swift in Sources */,
 				0321A53424D44E80004F1975 /* ActionCellView.swift in Sources */,
 				0396D52024B8B7ED00CC021B /* Preferences.swift in Sources */,
@@ -2582,6 +2585,7 @@
 				0396D54F24B8B7ED00CC021B /* InfoLocationView.swift in Sources */,
 				0396D55024B8B7ED00CC021B /* AssetLoaderDelegate.swift in Sources */,
 				0396D55124B8B7ED00CC021B /* PrefsVideos.swift in Sources */,
+				92E127992860C32200A3296A /* InfoQuoteView.swift in Sources */,
 				0396D55224B8B7ED00CC021B /* LocationLayer.swift in Sources */,
 				0396D55424B8B7ED00CC021B /* InfoTableSource.swift in Sources */,
 				0396D55524B8B7ED00CC021B /* Solar.swift in Sources */,
@@ -2684,6 +2688,7 @@
 				0378986024C35F8A009B9418 /* CacheViewController.swift in Sources */,
 				03C344FD24B778EE00906EA6 /* CheckboxCellView.swift in Sources */,
 				03D3A10F24C5D7CC0091FE99 /* Thumbnails.swift in Sources */,
+				92E1279A2860C32200A3296A /* InfoQuoteView.swift in Sources */,
 				FAC36F5E1BE1756D007F2A20 /* CheckCellView.swift in Sources */,
 				034A6DC524ACC80B00D62129 /* Source.swift in Sources */,
 				0338119724C1D15B002E23E0 /* Aerial.swift in Sources */,
@@ -2746,6 +2751,7 @@
 				03A42AA12449F959003B3012 /* YahooLogoLayer.swift in Sources */,
 				033842F824489EC600A2C523 /* WeatherLayer.swift in Sources */,
 				038C584823A9308C00224630 /* InfoContainerView.swift in Sources */,
+				92E127962860861200A3296A /* QuoteLayer.swift in Sources */,
 				03BF51BA23A24B40008AD373 /* AnimationTextLayer.swift in Sources */,
 				F008DAFE23AADCFB00739DE1 /* Brightness.swift in Sources */,
 				03A42AA4244A0E5F003B3012 /* ConditionLayer.swift in Sources */,
@@ -2802,6 +2808,7 @@
 				031945FB24CCC52600F37B35 /* HelpViewController.swift in Sources */,
 				032D1164239A7F0C007E7756 /* AerialView+Brightness.swift in Sources */,
 				03D3A11324C5FC770091FE99 /* AspectFillNSImageView.swift in Sources */,
+				92E127942860861200A3296A /* QuoteLayer.swift in Sources */,
 				030473CB24BCA9A40094A1A6 /* VideoViewItem.swift in Sources */,
 				0321A53324D44E80004F1975 /* ActionCellView.swift in Sources */,
 				FA6F81DC1D939455007975FE /* Preferences.swift in Sources */,
@@ -2871,6 +2878,7 @@
 				03A596D923AB8F000097EA66 /* InfoLocationView.swift in Sources */,
 				FAB22A7E1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift in Sources */,
 				038D2EDE23B0FB0D00CD91F7 /* PrefsVideos.swift in Sources */,
+				92E127982860C32200A3296A /* InfoQuoteView.swift in Sources */,
 				0306336823A1012200046A59 /* LocationLayer.swift in Sources */,
 				034F29B723A7A93D004B34D5 /* InfoTableSource.swift in Sources */,
 				03958349217F4416008E8F9C /* Solar.swift in Sources */,
@@ -2938,19 +2946,19 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Guillaume Louel (3L54M5L5KK)";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.9.5alpha4;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3L54M5L5KK;
+				DEVELOPMENT_TEAM = 7GRKLMAUTS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Aerial copy-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.9.5alpha4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.johncoates.Aerial;
+				PRODUCT_BUNDLE_IDENTIFIER = christian.vuerings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Aerial/Source/Models/Time/Aerial-Bridging-Header.h";
@@ -2966,12 +2974,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Guillaume Louel (3L54M5L5KK)";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.9.5alpha4;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3L54M5L5KK;
+				DEVELOPMENT_TEAM = 7GRKLMAUTS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Aerial copy-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
@@ -2979,7 +2987,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.9.5alpha4;
 				OTHER_CODE_SIGN_FLAGS = "--timestamp";
-				PRODUCT_BUNDLE_IDENTIFIER = com.johncoates.Aerial;
+				PRODUCT_BUNDLE_IDENTIFIER = christian.vuerings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Aerial/Source/Models/Time/Aerial-Bridging-Header.h";
@@ -2992,17 +3000,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2.1.4beta1.appmode;
-				DEVELOPMENT_TEAM = 3L54M5L5KK;
+				DEVELOPMENT_TEAM = 7GRKLMAUTS;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = Aerial/App/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 2.1.4beta1.appmode;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.johncoates.Aerial-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = christian.vuerings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Aerial/Source/Models/Time/Aerial-Bridging-Header.h";
@@ -3015,11 +3023,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2.1.4beta1.appmode;
-				DEVELOPMENT_TEAM = 3L54M5L5KK;
+				DEVELOPMENT_TEAM = 7GRKLMAUTS;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = Aerial/App/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -3187,19 +3195,19 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3.0.9;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3L54M5L5KK;
+				DEVELOPMENT_TEAM = 7GRKLMAUTS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Old stuff/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 3.0.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.johncoates.Aerial;
+				PRODUCT_BUNDLE_IDENTIFIER = christian.vuerings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Aerial/Source/Models/Time/Aerial-Bridging-Header.h";
@@ -3215,12 +3223,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3.0.9;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3L54M5L5KK;
+				DEVELOPMENT_TEAM = 7GRKLMAUTS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Old stuff/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
@@ -3228,7 +3236,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 3.0.9;
 				OTHER_CODE_SIGN_FLAGS = "--timestamp";
-				PRODUCT_BUNDLE_IDENTIFIER = com.johncoates.Aerial;
+				PRODUCT_BUNDLE_IDENTIFIER = christian.vuerings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Aerial/Source/Models/Time/Aerial-Bridging-Header.h";

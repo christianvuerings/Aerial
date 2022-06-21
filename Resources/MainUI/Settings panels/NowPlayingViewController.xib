@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20034" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20034"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,15 +36,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xha-Gi-SGi">
-                                <rect key="frame" x="52" y="20" width="174" height="17"/>
-                                <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" title="Play videos from selected:" id="VFZ-gN-tW0">
+                                <rect key="frame" x="52" y="20" width="115" height="17"/>
+                                <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" title="Play videos from:" id="VFZ-gN-tW0">
                                     <font key="font" metaFont="system" size="14"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="25" verticalHuggingPriority="25" horizontalCompressionResistancePriority="75" verticalCompressionResistancePriority="75" translatesAutoresizingMaskIntoConstraints="NO" id="NZB-in-TBi">
-                                <rect key="frame" x="16" y="5" width="28" height="44"/>
+                                <rect key="frame" x="16" y="5" width="28" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="28" id="RVq-88-iHe"/>
                                 </constraints>
@@ -54,7 +54,7 @@
                                 <color key="contentTintColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
                             </imageView>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TIi-EV-o7z">
-                                <rect key="frame" x="235" y="7" width="134" height="40"/>
+                                <rect key="frame" x="176" y="7" width="134" height="40"/>
                                 <popUpButtonCell key="cell" type="push" title="Locations" bezelStyle="rounded" alignment="left" controlSize="large" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="TKS-hW-LUa" id="52p-bV-ZiC">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system" size="14"/>
@@ -91,7 +91,7 @@
                                 </constraints>
                             </box>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6Kq-mf-i1S">
-                                <rect key="frame" x="564" y="9" width="105" height="35"/>
+                                <rect key="frame" x="574" y="9" width="100" height="35"/>
                                 <buttonCell key="cell" type="bevel" title="Select All" bezelStyle="regularSquare" image="checkmark.square" catalog="system" imagePosition="leading" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bD8-ch-EUh">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system" size="14"/>
@@ -102,7 +102,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KuS-N2-Fqz">
-                                <rect key="frame" x="679" y="9" width="121" height="35"/>
+                                <rect key="frame" x="684" y="9" width="116" height="35"/>
                                 <buttonCell key="cell" type="bevel" title="Deselect All" bezelStyle="regularSquare" image="square" catalog="system" imagePosition="leading" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Xhu-KK-daR">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system" size="14"/>
@@ -171,7 +171,7 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bpX-3f-k1M">
-                                <rect key="frame" x="87" y="2.5" width="20.5" height="27"/>
+                                <rect key="frame" x="87" y="2" width="20" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="7kx-iO-95B"/>
                                     <constraint firstAttribute="height" constant="20" id="z86-IR-fSO"/>
@@ -198,7 +198,7 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wAs-eu-RqN">
-                                <rect key="frame" x="691" y="2" width="20.5" height="25"/>
+                                <rect key="frame" x="691" y="2" width="20" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="aqM-Ww-1Y8"/>
                                     <constraint firstAttribute="height" constant="20" id="eib-h8-Gbf"/>
@@ -275,17 +275,17 @@
         </customView>
     </objects>
     <resources>
-        <image name="book" catalog="system" width="18" height="14"/>
-        <image name="checkmark.square" catalog="system" width="15" height="14"/>
+        <image name="book" catalog="system" width="19" height="14"/>
+        <image name="checkmark.square" catalog="system" width="16" height="14"/>
         <image name="clock" catalog="system" width="15" height="15"/>
-        <image name="eye.slash" catalog="system" width="21" height="14"/>
-        <image name="internaldrive" catalog="system" width="18" height="13"/>
+        <image name="eye.slash" catalog="system" width="20" height="14"/>
+        <image name="internaldrive" catalog="system" width="19" height="13"/>
         <image name="leaf" catalog="system" width="16" height="14"/>
-        <image name="location" catalog="system" width="15" height="15"/>
-        <image name="play.circle" catalog="system" width="20" height="20"/>
-        <image name="square" catalog="system" width="15" height="14"/>
+        <image name="location" catalog="system" width="16" height="15"/>
+        <image name="play.circle" catalog="system" width="19" height="19"/>
+        <image name="square" catalog="system" width="16" height="14"/>
         <image name="star" catalog="system" width="17" height="16"/>
-        <image name="sunset" catalog="system" width="20" height="16"/>
+        <image name="sunset" catalog="system" width="21" height="16"/>
         <image name="video.badge.plus" catalog="system" width="20" height="15"/>
     </resources>
 </document>

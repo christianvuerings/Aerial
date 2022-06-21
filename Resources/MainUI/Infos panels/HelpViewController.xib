@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,15 +18,15 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="fiN-Oe-faj">
-                    <rect key="frame" x="198" y="443" width="84" height="17"/>
-                    <textFieldCell key="cell" selectable="YES" title="Need help? " id="T0H-fO-TBy">
+                    <rect key="frame" x="198" y="443" width="128" height="17"/>
+                    <textFieldCell key="cell" selectable="YES" title="Do you need help?" id="T0H-fO-TBy">
                         <font key="font" metaFont="systemSemibold" size="14"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UUX-vU-Iz9">
-                    <rect key="frame" x="194" y="258" width="229" height="40"/>
+                    <rect key="frame" x="194" y="258" width="230" height="40"/>
                     <buttonCell key="cell" type="push" title="Check the Troubleshooting list" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sY3-LA-jwX">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -36,7 +36,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ccg-Ld-deT">
-                    <rect key="frame" x="194" y="143" width="191" height="40"/>
+                    <rect key="frame" x="194" y="143" width="192" height="40"/>
                     <buttonCell key="cell" type="push" title="Check the GitHub issues" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SvK-VQ-O9q">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -46,7 +46,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PHe-ta-hg6">
-                    <rect key="frame" x="194" y="45" width="159" height="40"/>
+                    <rect key="frame" x="194" y="45" width="160" height="40"/>
                     <buttonCell key="cell" type="push" title="Join Discord Server" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nVz-89-CnO">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system" size="14"/>
@@ -92,7 +92,7 @@
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gLI-ih-SCQ">
-                    <rect key="frame" x="194" y="356" width="129" height="40"/>
+                    <rect key="frame" x="194" y="356" width="130" height="40"/>
                     <buttonCell key="cell" type="push" title="Check the FAQ" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AGy-2X-jvi">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system" size="14"/>

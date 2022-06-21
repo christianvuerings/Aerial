@@ -60,7 +60,7 @@ enum InfoIconsWeather: Int, Codable {
 
 // The various info types available
 enum InfoType: String, Codable {
-    case location, message, clock, date, battery, updates, weather, countdown, timer, music
+    case location, message, clock, date, battery, updates, weather, countdown, timer, music, quote
 }
 
 enum InfoMessageType: Int, Codable {
@@ -101,6 +101,15 @@ struct PrefsInfo {
         var textFile: String
         var messageType: InfoMessageType
         var refreshPeriodicity: InfoRefreshPeriodicity
+    }
+    
+    struct Quote: CommonInfo, Codable {
+        var isEnabled: Bool
+        var fontName: String
+        var fontSize: Double
+        var corner: InfoCorner
+        var displays: InfoDisplays
+        var url: String
     }
 
     struct Clock: CommonInfo, Codable {
@@ -194,7 +203,7 @@ struct PrefsInfo {
     }
 
     // Our array of Info layers. User can reorder the array, and we may periodically add new Info types
-    @Storage(key: "layers", defaultValue: [ .message, .clock, .date, .location, .battery, .updates, .weather, .countdown, .timer])
+    @Storage(key: "layers", defaultValue: [ .message, .clock, .date, .location, .battery, .updates, .weather, .countdown, .timer, .quote])
     static var layers: [InfoType]
 
     // Location information
@@ -318,6 +327,15 @@ struct PrefsInfo {
                                                      triggerDate: Date(),
                                                      showSeconds: true))
     static var countdown: Countdown
+    
+    @Storage(key: "LayerQuote", defaultValue: Quote(isEnabled: false,
+                                                     fontName: "Helvetica Neue Medium",
+                                                     fontSize: 100,
+                                                     corner: .screenCenter,
+                                                     displays: .allDisplays,
+                                                     url: ""))
+    
+    static var quote: Quote
 
     // Timer
     @Storage(key: "LayerTimer", defaultValue: Timer(isEnabled: false,
@@ -394,6 +412,8 @@ struct PrefsInfo {
         switch type {
         case .location:
             return location
+        case .quote:
+            return quote
         case .message:
             return message
         case .clock:
@@ -420,6 +440,8 @@ struct PrefsInfo {
         switch type {
         case .location:
             location.isEnabled = value
+        case .quote:
+            quote.isEnabled = value
         case .message:
             message.isEnabled = value
         case .clock:
@@ -445,6 +467,8 @@ struct PrefsInfo {
         switch type {
         case .location:
             location.fontName = name
+        case .quote:
+            quote.fontName = name
         case .message:
             message.fontName = name
         case .clock:
@@ -470,6 +494,8 @@ struct PrefsInfo {
         switch type {
         case .location:
             location.fontSize = size
+        case .quote:
+            quote.fontSize = size
         case .message:
             message.fontSize = size
         case .clock:
@@ -495,6 +521,8 @@ struct PrefsInfo {
         switch type {
         case .location:
             location.corner = corner
+        case .quote:
+            quote.corner = corner
         case .message:
             message.corner = corner
         case .clock:
@@ -520,6 +548,8 @@ struct PrefsInfo {
         switch type {
         case .location:
             location.displays = mode
+        case .quote:
+            quote.displays = mode
         case .message:
             message.displays = mode
         case .clock:
@@ -546,6 +576,9 @@ struct PrefsInfo {
     static func updateLayerList() {
         if !PrefsInfo.layers.contains(.battery) {
             PrefsInfo.layers.append(.battery)
+        }
+        if !PrefsInfo.layers.contains(.quote) {
+            PrefsInfo.layers.append(.quote)
         }
 
         if !PrefsInfo.layers.contains(.countdown) {
