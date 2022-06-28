@@ -1,0 +1,1 @@
+{"buildTargets":["build","clean","default","lint","lint-autocorrect","make","test","test-travis","xcode-lint"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

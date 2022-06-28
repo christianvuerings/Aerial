@@ -89,7 +89,7 @@ class AnimationTextLayer: CATextLayer, AnimatableLayer {
         if self is LocationLayer {
             oppoMargin = getOppoMargin(corner: newCorner)
         } else {
-            oppoMargin = 0
+            oppoMargin = 40
         }
 
         let boundingRect = CGSize(width: baseLayer.visibleRect.size.width-2*mx-oppoMargin,
@@ -109,7 +109,7 @@ class AnimationTextLayer: CATextLayer, AnimatableLayer {
         }
 
         // Last line won't appear if we don't adjust a bit (why!?)
-        return CGRect(x: rect.origin.x, y: rect.origin.y, width: rect.width+10, height: rect.height + 10)
+        return CGRect(x: rect.origin.x, y: rect.origin.y, width: rect.width+10, height: rect.height + 400)
     }
 
     func getOppoMargin(corner: InfoCorner) -> CGFloat {

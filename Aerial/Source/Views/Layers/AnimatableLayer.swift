@@ -91,7 +91,8 @@ extension AnimatableLayer {
         case .screenCenter:
             anchorPoint = CGPoint(x: 0.5, y: 0)
             newPos = CGPoint(x: baseLayer.bounds.width/2,
-                             y: baseLayer.bounds.height/2 - my + 20)
+                             // previous: baseLayer.bounds.height/2 - my + 20
+                             y: 0)
             setAlignment(mode: .center)
         case .bottomLeft:
             anchorPoint = CGPoint(x: 0, y: 0)

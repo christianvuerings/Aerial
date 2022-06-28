@@ -63,8 +63,9 @@ class DownloadIndicatorLayer: AnimationTextLayer {
         if total == 0 {
             update(string: "")
         } else {
-            let progInt = Int(progress * 100)
-            update(string: "Downloading: \(progInt) %")
+//            let progInt = Int(progress * 100)
+//            update(string: "Downloading: \(progInt) %")
+            update(string: "")
         }
     }
 }

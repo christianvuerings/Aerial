@@ -1873,21 +1873,11 @@ corner</string>
             <rect key="frame" x="0.0" y="0.0" width="580" height="238"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLi-ay-EcN">
-                    <rect key="frame" x="109" y="206" width="35" height="17"/>
-                    <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" alignment="right" title="URL:" id="exl-oL-4Tf">
-                        <font key="font" metaFont="system" size="14"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
-                <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C0V-A0-Xsl">
-                    <rect key="frame" x="150" y="204" width="410" height="22"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="250" id="xBm-Dn-394"/>
-                    </constraints>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C0V-A0-Xsl">
+                    <rect key="frame" x="138" y="204" width="426" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" controlSize="large" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="https://" drawsBackground="YES" id="Oqz-Jc-hbb">
-                        <font key="font" metaFont="system" size="14"/>
+                        <font key="font" metaFont="system"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -1895,17 +1885,20 @@ corner</string>
                         <action selector="locationStringChange:" target="hOg-0m-nwb" id="ESG-jK-mvV"/>
                     </connections>
                 </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLi-ay-EcN">
+                    <rect key="frame" x="97" y="206" width="35" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" alignment="right" title="URL:" id="exl-oL-4Tf">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
-            <constraints>
-                <constraint firstItem="C0V-A0-Xsl" firstAttribute="leading" secondItem="RLi-ay-EcN" secondAttribute="trailing" constant="8" symbolic="YES" id="EPe-Jh-umP"/>
-                <constraint firstItem="C0V-A0-Xsl" firstAttribute="top" secondItem="hOg-0m-nwb" secondAttribute="top" constant="12" id="L6o-99-TWD"/>
-                <constraint firstAttribute="trailing" secondItem="C0V-A0-Xsl" secondAttribute="trailing" constant="16" id="Svj-my-ZAM"/>
-                <constraint firstItem="C0V-A0-Xsl" firstAttribute="baseline" secondItem="RLi-ay-EcN" secondAttribute="baseline" id="vdF-Zy-EkB"/>
-            </constraints>
             <connections>
                 <outlet property="urlField" destination="C0V-A0-Xsl" id="Vrp-yB-0Nk"/>
             </connections>
-            <point key="canvasLocation" x="-120" y="1687"/>
+            <point key="canvasLocation" x="-826" y="581"/>
         </customView>
     </objects>
     <resources>

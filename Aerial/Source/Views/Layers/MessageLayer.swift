@@ -53,20 +53,21 @@ class MessageLayer: AnimationTextLayer {
             case .text:
                 update(string: config.message)
             case .shell:
-                update(string: "")
-                DispatchQueue.global().async {
-                    debugLog("setting up initial")
-                    let result = self.runShell()
-                    
-                    if let result = result {
-                        // Do it on the main queue...
-                        DispatchQueue.main.async {
-                            debugLog("updating initial " + result)
-                            self.update(string: result)
-                        }
-                    }
-                }
+//                update(string: "")
+//                DispatchQueue.global().async {
+//                    debugLog("setting up initial")
+//                    let result = self.runShell()
+//
+//                    if let result = result {
+//                        // Do it on the main queue...
+//                        DispatchQueue.main.async {
+//                            debugLog("updating initial " + result)
+//                            self.update(string: result)
+//                        }
+//                    }
+//                }
                 //setupRefresh()
+                update(string: config.message)
             case .textfile:
                 // TODO
                 update(string: config.message)
@@ -77,59 +78,59 @@ class MessageLayer: AnimationTextLayer {
         }
     }
 
-    func setupRefresh() {
-        debugLog("setting up refresh")
-        guard let config = config else {
-            return
-        }
+//    func setupRefresh() {
+//        debugLog("setting up refresh")
+//        guard let config = config else {
+//            return
+//        }
+//
+//        guard config.refreshPeriodicity != .never else {
+//            return
+//        }
+//
+//        if #available(OSX 10.12, *) {
+//            var interval = 0.0
+//            switch config.refreshPeriodicity {
+//            case .never:
+//                interval = 1
+//            case .tenseconds:
+//                interval = 10
+//            case .thirtyseconds:
+//                interval = 30
+//            case .oneminute:
+//                interval = 60
+//            case .fiveminutes:
+//                interval = 300
+//            case .tenminutes:
+//                interval = 600
+//            }
+//
+//            messageTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true, block: { [self] (_) in
+//
+//                DispatchQueue.global().async {
+//                    let result = self.runShell()
+//                    self.update(string: result ?? "")
+//                }
+//            })
+//        }
+//    }
 
-        guard config.refreshPeriodicity != .never else {
-            return
-        }
-
-        if #available(OSX 10.12, *) {
-            var interval = 0.0
-            switch config.refreshPeriodicity {
-            case .never:
-                interval = 1
-            case .tenseconds:
-                interval = 10
-            case .thirtyseconds:
-                interval = 30
-            case .oneminute:
-                interval = 60
-            case .fiveminutes:
-                interval = 300
-            case .tenminutes:
-                interval = 600
-            }
-
-            messageTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true, block: { [self] (_) in
-
-                DispatchQueue.global().async {
-                    let result = self.runShell()
-                    self.update(string: result ?? "")
-                }
-            })
-        }
-    }
-
-    func runShell() -> String? {
-        guard let config = config else {
-            return nil
-        }
-
-        if config.shellScript != "" {
-            if FileManager.default.fileExists(atPath: PrefsInfo.message.shellScript) {
-                let (result, _) = Aerial.shell(launchPath: PrefsInfo.message.shellScript)
-
-                debugLog("result " + (result ?? ""))
-                if let res = result {
-                    return res
-                }
-            }
-        }
-
-        return nil
-    }
+//    func runShell() -> String? {
+//        guard let config = config else {
+//            return nil
+//        }
+//
+//        if config.shellScript != "" {
+//            if FileManager.default.fileExists(atPath: PrefsInfo.message.shellScript) {
+//                let (result, _) = Aerial.shell(launchPath: PrefsInfo.message.shellScript)
+//
+//                debugLog("result " + (result ?? ""))
+//                if let res = result {
+//                    return res
+//                }
+//            }
+//        }
+//
+//        return nil
+//    }
 }

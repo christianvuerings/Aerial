@@ -402,7 +402,6 @@ final class AerialView: ScreenSaverView, CAAnimationDelegate {
             hasStartedPlaying = true
             player!.rate = PlaybackSpeed.forVideo(self.currentVideo!.id)
             debugLog("start playback: \(self.frame) \(self.bounds) rate: \(player!.rate)")
-
             // If we share a player, we need to add the fades and the text to all the
             // instanciated views using it (eg: in mirrored mode)
             if AerialView.sharingPlayers {

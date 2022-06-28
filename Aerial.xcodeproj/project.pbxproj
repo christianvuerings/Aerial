@@ -818,6 +818,9 @@
 		92E127982860C32200A3296A /* InfoQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E127972860C32200A3296A /* InfoQuoteView.swift */; };
 		92E127992860C32200A3296A /* InfoQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E127972860C32200A3296A /* InfoQuoteView.swift */; };
 		92E1279A2860C32200A3296A /* InfoQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E127972860C32200A3296A /* InfoQuoteView.swift */; };
+		92E1279C2867114500A3296A /* Quotely.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1279B2867114500A3296A /* Quotely.swift */; };
+		92E1279D2867114500A3296A /* Quotely.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1279B2867114500A3296A /* Quotely.swift */; };
+		92E1279E2867114500A3296A /* Quotely.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1279B2867114500A3296A /* Quotely.swift */; };
 		AA7E2E5E1FC62E8B00E5F320 /* AerialPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E2E5D1FC62E8B00E5F320 /* AerialPlayerItem.swift */; };
 		F00864B423AAE7F0003210EF /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00864B323AAE7F0003210EF /* DarkMode.swift */; };
 		F00864B523AAE7F0003210EF /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00864B323AAE7F0003210EF /* DarkMode.swift */; };
@@ -1168,6 +1171,7 @@
 		03FF193326972C1200A0FA7F /* AppleMusicSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicSearch.swift; sourceTree = "<group>"; };
 		92E127932860861200A3296A /* QuoteLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteLayer.swift; sourceTree = "<group>"; };
 		92E127972860C32200A3296A /* InfoQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoQuoteView.swift; sourceTree = "<group>"; };
+		92E1279B2867114500A3296A /* Quotely.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotely.swift; sourceTree = "<group>"; };
 		AA7E2E5D1FC62E8B00E5F320 /* AerialPlayerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerialPlayerItem.swift; sourceTree = "<group>"; };
 		F00864B323AAE7F0003210EF /* DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
 		F00864B623AAE8E9003210EF /* NightShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightShift.swift; sourceTree = "<group>"; };
@@ -1554,6 +1558,7 @@
 				032851F6260A4C2B00684A81 /* OneCall.swift */,
 				03AA32612631A8F2002198C3 /* GeoCoding.swift */,
 				036A7E9A26370C260019186B /* Forecast.swift */,
+				92E1279B2867114500A3296A /* Quotely.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -2594,6 +2599,7 @@
 				0396D55624B8B7ED00CC021B /* Brightness.swift in Sources */,
 				0300B84A24D1FD24006132E5 /* FirstSetupWindowController.swift in Sources */,
 				0396D55724B8B7ED00CC021B /* SourceInfo.swift in Sources */,
+				92E1279D2867114500A3296A /* Quotely.swift in Sources */,
 				0338119624C1D15B002E23E0 /* Aerial.swift in Sources */,
 				030010A324D706DB0092AE68 /* SidebarOutlineView.swift in Sources */,
 				0396D55924B8B7ED00CC021B /* PrefsTime.swift in Sources */,
@@ -2629,6 +2635,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E1279E2867114500A3296A /* Quotely.swift in Sources */,
 				03B8742424E41CF8008E3D1B /* CacheSetupViewController.swift in Sources */,
 				03D3A11524C5FC770091FE99 /* AspectFillNSImageView.swift in Sources */,
 				031FB7A2248A873C0054BAFD /* PrefsCache.swift in Sources */,
@@ -2887,6 +2894,7 @@
 				F008DAFD23AADCFB00739DE1 /* Brightness.swift in Sources */,
 				0300B84924D1FD24006132E5 /* FirstSetupWindowController.swift in Sources */,
 				03C97BC324B6210500739CED /* SourceInfo.swift in Sources */,
+				92E1279C2867114500A3296A /* Quotely.swift in Sources */,
 				0338119524C1D15B002E23E0 /* Aerial.swift in Sources */,
 				030010A224D706DB0092AE68 /* SidebarOutlineView.swift in Sources */,
 				0361B9AB23D73D4500B6252D /* PrefsTime.swift in Sources */,

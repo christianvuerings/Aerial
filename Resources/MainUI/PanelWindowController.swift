@@ -175,7 +175,27 @@ import Cocoa
 
     // Switch from one source to another
     func switchTo(_ path: String) {
+        
+        
         print("switch to :" + path)
+        
+        print("before switch")
+        
+        Quotely.fetch { result in
+            print("After fetch")
+            switch result {
+            case .success(let data):
+                if let name = data.quotes.first?.body {
+                    print(name)
+                }
+            case .failure(let error):
+                if error == .requestFailed {
+                    print("Quotes not found")
+                } else {
+                    print(error.localizedDescription)
+                }
+            }
+        }
 
         guard let currentPath = currentPath,
               let videosVC = videosVC,

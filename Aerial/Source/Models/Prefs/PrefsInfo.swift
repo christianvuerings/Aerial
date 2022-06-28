@@ -330,7 +330,7 @@ struct PrefsInfo {
     
     @Storage(key: "LayerQuote", defaultValue: Quote(isEnabled: false,
                                                      fontName: "Helvetica Neue Medium",
-                                                     fontSize: 100,
+                                                     fontSize: 80,
                                                      corner: .screenCenter,
                                                      displays: .allDisplays,
                                                      url: ""))
